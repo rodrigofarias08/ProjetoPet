@@ -1,0 +1,73 @@
+<!--tag para versão do html. Neste caso é o HTML mais recente-->
+<!DOCTYPE html>
+<html>
+  <!--Cabeçalho - configurações da página-->
+  <head>
+    <title>Page Title</title>
+
+    <!-- link para o arquivo css-->
+    <link rel="stylesheet" href="./css/estilo.css" />
+    <!-- definição do formato de codificação de caracteres utilizado no documento-->
+    <meta charset="UTF-8" />
+    <!-- descrição da página-->
+    <meta name="description" content="Aula de HTML e CSS" />
+    <!-- palavras chaves-->
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript" />
+    <meta name="author" content="Rodrigo Farias" />
+    <!-- indicação de que a página deve ser atualizada a cada 30 segundos-->
+    <meta http-equiv="refresh" content="30" />
+
+    <!-- código javascript simplificado não recomendado-->
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      }
+    </script>
+    <!-- código javascript 2 recomendado-->
+    <script src="./js/inicial.js"></script>
+
+    <!-- tag para adicional css diretamente dentro do arquivo html - não recomendado
+    <style>
+      body {
+        background-color: lightblue;
+      }
+
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      p {
+        font-family: verdana;
+        font-size: 20px;
+      }
+    </style>-->
+  </head>
+
+  <body id="bodyID" class="bodyClass">
+    <h1 id="demo">This is a heading</h1>
+    <h2 onclick="myFunction()">This is a heading</h2>
+
+    <!--Não funcionará uma tag html com dois id-->
+    <h3 id="para1 para2" onclick="myFunction2()">This is a heading</h3>
+
+    <!--Para usar mais do que um estilo em uma única tag html é necessário utilizar classes css-->
+    <h3 class="para1 para2" id="tag3">This is a heading 1232435467679</h3>
+    <p>This is a paragraph.</p>
+
+    <!-- Botão para trocar cor do body-->
+    <button onclick="trocaBackColor()">Troca cor</button>
+
+    <div>
+        <p></p>
+      <label>Nome</label>
+      <input id="nome" type="text" onchange="escreveSaudacao(this.value)"/>
+      <p></p>
+      <p id="saudacao">Boa noite!</p>
+
+
+    </div>
+
+
+  </body>
+</html>
