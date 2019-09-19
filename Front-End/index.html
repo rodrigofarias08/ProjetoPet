@@ -7,6 +7,15 @@
 
     <!-- link para o arquivo css-->
     <link rel="stylesheet" href="./css/estilo.css" />
+
+    <!-- link para framework bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <!-- definição do formato de codificação de caracteres utilizado no documento-->
     <meta charset="UTF-8" />
     <!-- descrição da página-->
@@ -59,15 +68,37 @@
     <button onclick="trocaBackColor()">Troca cor</button>
 
     <div>
-        <p></p>
+      <p></p>
       <label>Nome</label>
-      <input id="nome" type="text" onchange="escreveSaudacao(this.value)"/>
+      <input id="nome" type="text" onchange="escreveSaudacao(this.value)" />
       <p></p>
       <p id="saudacao">Boa noite!</p>
-
-
     </div>
 
 
+    <!-- Adicionando um card bootstrap de exemplo-->
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+    </div>
+
+
+    <!-- Adicionando um card para imagem bootstrap de exemplo-->
+    <div class="card" style="width: 18rem;">
+      <img src="./img/teste1.jpg" class="card-img-top" alt="Upload de imagem">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    
   </body>
 </html>
